@@ -1,0 +1,58 @@
+.wrapper{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+
+    border: 1px solid grey;
+    padding-top: 1.4rem;
+}
+
+.value{
+    font-size: 2.4rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.announce{
+    text-transform: uppercase;
+    padding: 16px 0;
+    color: grey;
+
+    &[datatype='negative']{
+        color: coral;
+    }
+
+    &[datatype='positive']{
+        color: lightgreen;
+    }
+
+}
+
+.button{
+    padding: 16px 7px;
+
+    &:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+
+.negativeButton{
+    @extend .button;
+
+    background-color: coral;
+}
+
+.positiveButton{
+    @extend .button;
+
+    background-color: lightgreen;
+}
