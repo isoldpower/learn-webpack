@@ -1,0 +1,46 @@
+@use './styles';
+
+.welcomePage__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 96px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.welcomePage__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 24px;
+
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 32px;
+    max-width: 90vw;
+}
+
+.welcomePage__text {
+    font-family: "Avenir Next", Helvetica, Arial, sans-serif;
+    margin-bottom: -20px;
+    font-size: 28px;
+
+    @media (min-width: 640px) {
+        font-size: 40px;
+    }
+}
+
+.welcomePage__image {
+    display: block;
+    max-width: 100%;
+}
+
+.welcomePage__imageCredentials {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.5);
+    bottom: -8px;
+    right: 24px;
+}
